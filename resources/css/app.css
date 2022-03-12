@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
+
+h2 {
+    @apply text-center text-3xl font-extrabold text-gray-900;
+}
+
+form {
+    @apply space-y-6;
+}
+
+a {
+    @apply text-sm font-medium text-indigo-600 hover:text-indigo-500;
+}
+
+label.form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+input.form-input {
+    @apply shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md;
+}
+
+input.form-input-error {
+    @apply border-red-300 text-red-900 placeholder-red-300 focus:outline-none focus:ring-red-500 focus:border-red-500;
+}
+
+span.form-invalid-feedback {
+    @apply font-light mt-2 text-xs text-red-600;
+}
+
+button {
+    @apply w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+button.button-primary {
+    @apply text-white bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500;
+}
+
 @tailwind utilities;
