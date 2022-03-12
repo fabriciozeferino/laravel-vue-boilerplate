@@ -1,11 +1,15 @@
-const mix = require('laravel-mix');
+const mix = require('laravel-mix')
 
 mix.browserSync({
-	proxy: process.env.APP_URL,
-	notify: true
-});
+  proxy: process.env.APP_URL,
+  notify: true,
+})
 
-mix.js('resources/js/app.js', 'public/js').vue();
+mix.js('resources/js/app.js', 'public/js').vue()
 mix.postCss('resources/css/app.css', 'public/css', [
-	require("tailwindcss"),
-]);
+  require('tailwindcss'),
+])
+
+if (mix.inProduction()) {
+  mix.version()
+}
