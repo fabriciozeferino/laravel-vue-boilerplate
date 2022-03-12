@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', static function () {
-    return view('index');
-});
+Route::get('/', static fn() => redirect('/app'));
+
+Route::middleware('auth:sanctum')
+    ->get('/app', fn() => view('app'))
+    ->name('app');
+
