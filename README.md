@@ -42,7 +42,7 @@ docker run --rm \
 
 6. Run all server side tests
 ```bash
-sail test
+./vendor/bin/sail test
 ```
 
 ### Frontend
