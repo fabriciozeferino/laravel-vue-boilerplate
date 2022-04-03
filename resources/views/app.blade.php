@@ -9,9 +9,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body class="antialiased h-full">
-<main id="app">
 
-</main>
+<main id="app" class="h-full"></main>
 
 <script src="{{ asset('js/app.js') }}"></script>
 </body>
